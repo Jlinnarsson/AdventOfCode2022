@@ -13,7 +13,7 @@ def isPairFullyOverlapping(first: str, second: str):
 def isPairOverlapping(first: str, second: str):
     firstVaules = first.split('-')
     secondVaules = second.split('-')
-    if not (int(firstVaules[1]) < int(secondVaules[0]) or int(secondVaules[1]) < int(firstVaules[0])):
+    if (int(firstVaules[1]) > int(secondVaules[0]) or int(secondVaules[1]) > int(firstVaules[0])):
         return True
 
 fullyOverlappingPairs = 0
